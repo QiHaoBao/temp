@@ -8,7 +8,7 @@
     <meta name="author" content="Hongyang Wang, hongyang.wang@sv.cmu.edu">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Use Cases Overview - CMDA Apache Project</title>
+    <title>Educational Use Cases - CMDA Apache Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,9 @@
 
     <!-- Custom styles for this page -->
     <link href="./css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <style>
-      @media screen and (max-width:769px) {
+      @media screen and (max-width:425px) {
         .container .main-content img {
           width: 100%;
         }
@@ -111,19 +112,38 @@
 
     <div class="container">
       <div class="main-content">
-        <h2>Science Use Cases Example 4: Relative Humidity at 700 hPa</h2>
+        <h2>Topic #1: Where is global warming?</h2>
+        <h3>Datasets</h3>
+        <ol>
+          <li>ARGO ocean temperature</li>
+          <li>AMSRE sea surface temperature</li>
+          <li>ECMWF Reanalysis surface winds</li>
+          <li>TOA shortwave and longwave</li>
+        </ol>
 
-        <p>Services Used: 3D variable 2D slice</p>
+        <h3>Geographic foci</h3>
+        <ol>
+          <li>mid latitudes (+-60-30)</li>
+          <li>low latitudes (+-30-0)</li>
+        </ol>
 
-        <p>Datasets used: ECMWF-Interim Relative Humidity</p>
+        <h3>Introduction</h3>
+        <p>In 2015 the Earth crossed a major global warming milestone: the global mean surface air temperature (GMSAT) was one degree Celsius warmer than the mid-19th century pre-industrial average. Yet, the road to this 1 degree of atmospheric warming was very bumpy: the GMSAT anomaly in 2012 was the same as 2002 and 1998. Because the heat capacity of the atmosphere is much smaller relative to the ocean, much of the year-to-year variability in GMSAT is driven by natural temperature variations of the ocean surface. If we really want to see where the excess energy of global warming is going, we need to quantify changes in the energy storage in Earth’s largest thermal reservoir: the ocean.</p>
 
-        <p>Scientific Merit: This variable most clearly shows the low cloud regions, as the Relative Humidity (RH) is very low above the boundary layer, whose top is generally well below this pressure level. The Intertropical Convergence Zone (ITCZ) and South Pacific Convergence Zone (SPCZ) are also well-represented as having mean RH at 700 hPa around 60-70% (or higher); Same Time Period of Previous slide, and domain: Lon:[0,360],Lat:[-60,60]</p>
+        <h3>Questions</h3>
+        <ol>
+          <li>Global warming is a consequence of an energy imbalance: more shortwave radiation absorbed at the top of the atmosphere (TOA) than re-emitted longwave and reflected shortwave. Calculate the global net radiative flux imbalance at the top of the atmosphere (TOA).  How does this compare with published estimates? How has this number changed through time?</li>
+          <li>If Earth’s radiative flux imbalance was entirely absorbed in the troposphere (assume the lower 10 km of atmosphere), what would be the average annual increase in GMSAT?  How does your predicted temperature change compare to the actual change through time?</li>
+          <li>Repeat all parts of question (2) but instead consider that the entire radiative flux imbalance warms the upper 10 m, 100 m, 700 m, and 2000 m of the global ocean, respectively.  Compare the predicted temperature changes against observations by using AMSRE SST data as a proxy for the upper 10 m ocean temperature, and ARGO data for the upper 100, 700 and 2000 m.  How do the actual warming trends of each of these depth categories compare against predictions?</li>
+          <li>Divide the ocean into 4 basins: Pacific, Indian, Atlantic, and Southern Oceans. Which basins and which depths account for the greatest observed warming?</li>
+          <li>Compare the year to year variations in GMSAT over the past 30 years with variations in the annual mean SST for each of the basins in Question 4.  Which basin’s SST is the most correlated with GMSAT?</li>
+        </ol>
 
-        <img src="./img/scienceUsecase7.png" alt=""/>
-
-
-
-
+        <h3>Contact Scientist</h3>
+        <p>
+          <a href="mailto:Ian.Fenty@jpl.nasa.gov">Dr. Ian Fenty</a>
+        </p>
+        
       </div>
     </div>
 

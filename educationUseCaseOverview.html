@@ -8,7 +8,7 @@
     <meta name="author" content="Hongyang Wang, hongyang.wang@sv.cmu.edu">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Use Cases Overview - CMDA Apache Project</title>
+    <title>Scientific Use Cases Overview - CMDA Apache Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +18,6 @@
 
     <!-- Custom styles for this page -->
     <link href="./css/common.css" rel="stylesheet">
-    <style>
-      @media screen and (max-width:769px) {
-        .container .main-content img {
-          width: 100%;
-        }
-      }
-    </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -111,16 +104,60 @@
 
     <div class="container">
       <div class="main-content">
-        <h2>Science Use Cases Example 4: Relative Humidity at 700 hPa</h2>
+        <h2>Educational Use Cases Overview</h2>
 
-        <p>Services Used: 3D variable 2D slice</p>
+          <table class="table table-bordered">
+            <tbody><tr>
+              <th class="danger">Topic ID
+              </th><th class="success">Educational Topic
+            </th><th class="warning">Geographic foci
+            </th><th class="active">Datasets Used
+            </th><th class="info">Details
+            </th></tr>
+            <tr>
+              <td class="danger">1</td>
+              <td class="success">Where is global warming?</td>
+              <td class="warning">mid latitudes (+-60-30), low latitudes (+-30-0)</td>
+              <td class="active">ARGO ocean temperature, AMSRE sea surface temperature, ECMWF Reanalysis surface winds, TOA shortwave and longwave</td>
+              <td class="info"><a href="./educationUseCase1.html">Educational Use Case 1</a></td>
+            </tr>
+            <tr>
+              <td class="danger">2</td>
+              <td class="success">Tropical variability and analysis of ENSO forcing in observations and models</td>
+              <td class="warning">The tropical band, mostly between 25°S and 25°N, and primarily along the Pacific</td>
+              <td class="active">ECMWF Sea-Surface Temperatures (SSTs), near surface winds, cloud fraction, ARGO Ocean Temperatures, NOAA NODC Ocean Heat Content, MODIS cloud top temperature, cloud optical depth (τ), and cirrus reflectance, CERES TOA LW cloud forcing, and a subset of these variables from both historical coupled climate models and atmosphere-only climate models (AMIP models). </td>
+              <td class="info"><a href="./educationUseCase2.html">Educational Use Case 2</a></td>
+            </tr>
+            <tr>
+              <td class="danger">3</td>
+              <td class="success">Variability of clouds and precipitation</td>
+              <td class="warning">global, tropics (15S-15N), subtropics (15-30S/N), mid-latitude (30-50S/N) and selected regions (ITCZ, northeast Pacific and southeast Pacific)</td>
+              <td class="active">MODIS cloud fraction, GPCP/TRMM precipitation, AMSR-E sea surface temperature, CERES longwave and shortwave radiative fluxes, CMIP5 simulations of cloud fraction, precipitation and radiative fluxes</td>
+              <td class="info"><a href="./educationUseCase3.html">Educational Use Case 3</a></td>
+            </tr>
+            <tr>
+              <td class="danger">4</td>
+              <td class="success">Vegetation phenology and climatic controls</td>
+              <td class="warning">northern latitude forests of North America, African sahel, Australia</td>
+              <td class="active">MODIS leaf area index, AIRS surface air temperature, TRMM precipitation, CERES surface downwelling shortwave radiation</td>
+              <td class="info"><a href="./educationUseCase4.html">Educational Use Case 4</a></td>
+            </tr>
 
-        <p>Datasets used: ECMWF-Interim Relative Humidity</p>
-
-        <p>Scientific Merit: This variable most clearly shows the low cloud regions, as the Relative Humidity (RH) is very low above the boundary layer, whose top is generally well below this pressure level. The Intertropical Convergence Zone (ITCZ) and South Pacific Convergence Zone (SPCZ) are also well-represented as having mean RH at 700 hPa around 60-70% (or higher); Same Time Period of Previous slide, and domain: Lon:[0,360],Lat:[-60,60]</p>
-
-        <img src="./img/scienceUsecase7.png" alt=""/>
-
+            <tr>
+              <td class="danger">5</td>
+              <td class="success">Land water storage variability as a function of human and natural controls</td>
+              <td class="warning">Northern India, southwest US</td>
+              <td class="active">GRACE moisture storage (equivalent water height over land), TRMM precipitation, CERES surface downwelling shortwave radiation</td>
+              <td class="info"><a href="./educationUseCase5.html">Educational Use Case 5</a></td>
+            </tr>
+            <tr>
+              <td class="danger">6</td>
+              <td class="success">Sensitivity of equilibrium climate on physical parameterizations</td>
+              <td class="warning">global, tropics and subtropics (30S-30N), mid-latitudes and polar regions (45N-90N; 45S-90S)</td>
+              <td class="active">8 WRF aqua-planet simulation results; horizontal and vertical velocity, cloud cover, water vapor and temperature profiles, precipitation and top of the atmosphere radiative fluxes</td>
+              <td class="info"><a href="./educationUseCase6.html">Educational Use Case 6</a></td>
+            </tr>
+            </tbody></table>
 
 
 

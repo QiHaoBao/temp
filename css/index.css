@@ -5,8 +5,8 @@
   text-align: center;
   background-color: #159957;
   background-image: linear-gradient(120deg, #159957, #155799);
-  //background-image: linear-gradient(120deg, #FF6D00, #C51162);
-  //background-image: linear-gradient(120deg, #AD1457, #FB8C00);
+  /*//background-image: linear-gradient(120deg, #FF6D00, #C51162);
+  //background-image: linear-gradient(120deg, #AD1457, #FB8C00);*/
 }
 .page-header h1 {
   font-size: 5rem;
@@ -16,8 +16,9 @@
   text-align: left;
   padding: 0 0 2rem 0 ;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 200;
   opacity: 0.75;
+  letter-spacing: 0.5px;
 }
 .page-header .btn {
   padding: 0.9rem 2rem;
@@ -34,6 +35,15 @@
   background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.container .main-content ul li {
+  margin-bottom: 10px;
+}
+.container .main-content ol li {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 /* Responsive */

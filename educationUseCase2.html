@@ -8,7 +8,7 @@
     <meta name="author" content="Hongyang Wang, hongyang.wang@sv.cmu.edu">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Use Cases Overview - CMDA Apache Project</title>
+    <title>Educational Use Cases - CMDA Apache Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,9 @@
 
     <!-- Custom styles for this page -->
     <link href="./css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <style>
-      @media screen and (max-width:769px) {
+      @media screen and (max-width:425px) {
         .container .main-content img {
           width: 100%;
         }
@@ -111,19 +112,33 @@
 
     <div class="container">
       <div class="main-content">
-        <h2>Science Use Cases Example 4: Relative Humidity at 700 hPa</h2>
+        <h2>Topic #2: Tropical variability and analysis of ENSO forcing in observations and models</h2>
+        <h3>Datasets</h3>
+        <ul>
+          <li>ECMWF Sea-Surface Temperatures (SSTs), near surface winds, cloud fraction, ARGO Ocean Temperatures, NOAA NODC Ocean Heat Content, MODIS cloud top temperature, cloud optical depth (τ), and cirrus reflectance, CERES TOA LW cloud forcing, and a subset of these variables from both historical coupled climate models and atmosphere-only climate models (AMIP models).  </li>
+        </ul>
 
-        <p>Services Used: 3D variable 2D slice</p>
+        <h3>Geographic foci</h3>
+        <ul>
+          <li>The tropical band, mostly between 25°S and 25°N, and primarily along the Pacific </li>
+        </ul>
 
-        <p>Datasets used: ECMWF-Interim Relative Humidity</p>
+        <h3>Introduction</h3>
+        <p>ENSO is a periodical variation in winds, SSTs, and cloud characteristics over the near equatorial central/eastern Pacific Ocean, with remote influences nearly globally (teleconnections). The irregular periodicity of ENSO (2-7 years) continues to provide challenges; during some years a full-fledged El Nino never develops even in the midst of anomalously warm waters. In this topic, we use statistical techniques, including Empirical Orthogonal Function (EOF) Analysis, lead/lag assessment, and composite analysis to examine the variability of atmospheric and ocean variables, whether any insights can be gleaned about forcing versus response variables, or if ENSO represents a true ocean-atmosphere coupled system for which predictors and responses are difficult to disentangle.  </p>
+        <h3>Questions</h3>
+        <ol>
+          <li>Starting with ECMWF-Interim and observational datasets, perform EOF analysis, beginning with a domain of [100°:290°, 25°S:25°N], and also examine the sensitivity of the domain. For datasets that precede 1998, identify moderate/strong El Nino and La Nina events from Principal Component (PC) Time Series, and compare with published results (e.g. NOAA). Describe the spatial structure of EOF1 (and possibly EOF2), and identify any geographical offsets of variables in terms of the Walker Circulation.</li>
+          <li>Does the u-wind (eastward wind) ever lead the SST signal, and if so, what does this suggest about the lead/lag and forcing/response of these two variables? How are anomalously strong westerly winds (e.g. westerly wind bursts) geographically related to SST?</li>
+          <li>Using CERES TOA LW Cloud Forcing and MODIS cloud top temperatures, examine the response of cloud heights as a function of ENSO. Explain in terms of the Stefan-Bolztmann Law, including the shift in the location and height of convection during El Nino events. Is there any signal in cirrus cloud reflectance? </li>
+          <li>Next, evaluate the ability to simulate ENSO from several of the available historical coupled GCMs. Utilize techniques described above, and characterize fidelity in terms of spatial structure, timing, etc.  Are AMIP models more skillful?  Explain why or why not.</li>
+          <li>Use ECMWF-Interim to divide the past ~30 years into decadal chunks.  Describe location changes with time in terms of “Central” vs “Eastern” ENSO events.  Can precipitation off the U.S. West Coast be related to the type of El Nino event?   </li>
+        </ol>
 
-        <p>Scientific Merit: This variable most clearly shows the low cloud regions, as the Relative Humidity (RH) is very low above the boundary layer, whose top is generally well below this pressure level. The Intertropical Convergence Zone (ITCZ) and South Pacific Convergence Zone (SPCZ) are also well-represented as having mean RH at 700 hPa around 60-70% (or higher); Same Time Period of Previous slide, and domain: Lon:[0,360],Lat:[-60,60]</p>
-
-        <img src="./img/scienceUsecase7.png" alt=""/>
-
-
-
-
+        <h3>Contact Scientist</h3>
+        <p>
+          <a href="mailto:terry.kubar@jpl.nasa.gov">Dr. Terence Kubar</a>
+        </p>
+        
       </div>
     </div>
 
